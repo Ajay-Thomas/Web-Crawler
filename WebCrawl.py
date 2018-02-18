@@ -10,7 +10,7 @@ from collections import OrderedDict
 
 def getApp(app_link):
 
-    file = open(r'C:\Users\User\Desktop\IR\Package\APP.json','w',encoding='utf-8')
+    file = open(r'AppJson.json','w',encoding='utf-8')
     file.write('{"Apps":[')
     for app in app_link:
         ordict = OrderedDict()
@@ -35,7 +35,7 @@ def getApp(app_link):
         file.write(',\n')
 
     file.write(']}')
-    file.close()ct["L
+    file.close()
 
 
 def getAppLink(link,depth):
@@ -62,7 +62,7 @@ link = "https://play.google.com/store/apps/top"
 #app_links = list(set(getAppLink(link,1)))
 #for app_link in app_links:
 #    print(app_link)
-file = open(r'C:\Users\User\Desktop\IR\Package\topchart.txt','r')
+file = open(r'topchart.txt','r')
 app_link = file.read().split("\n")
 getApp(app_link)
 

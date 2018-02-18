@@ -116,7 +116,7 @@ def main(query):
 #if __name__ == '__main__':
     query = "music"
     vect = TfidfVectorizer(min_df=1)
-    file = open(r'C:\Users\User\Desktop\IR\Package\APP.json')
+    file = open(r'AppJson.json')
     data = json.load(file)
     doc = []
     full_doc = {}
